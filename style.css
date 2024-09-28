@@ -1,0 +1,232 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+   background-color: aliceblue; 
+   height: 100vh;
+}
+.container{
+    width: 80%;
+    margin-left:auto ;
+    margin-right:auto ;
+    margin-bottom:30px ;
+background-color: #eee;
+}
+
+
+
+nav .container{
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .links{
+    position: relative;
+
+
+}
+nav .container .bars{
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top:o;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+nav .container .bars span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-bottom:3px ;
+    
+
+}
+
+nav .container .bars :nth-child(2){
+
+width: 60%;
+transition: 0.3s;
+}
+nav .container .bars:hover :nth-child(2){
+
+width: 100%;
+
+}
+/* nav .container .links:hover  ul{
+} */
+
+nav .links ul{
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+    list-style: none;
+    width: 150px;
+    background-color: rgb(117, 188, 250);
+    border-radius: 2px;
+    padding: 0;
+    overflow: hidden;
+    height: 0;
+    transition:0.5s;
+
+}
+
+
+#btn{
+    display: none;
+
+}
+
+.links:has(#btn:checked) ul {
+    height: auto;
+}
+
+nav ul li{
+    /* justify-self: start; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+
+}
+nav ul :not(:last-child){
+    border-bottom:solid #333 1px ;
+    padding-bottom:3px ;
+}
+
+
+nav ul li a{
+
+    text-decoration: none;
+    color: #222;
+    transition: 0.3s;
+
+}
+
+nav ul  :hover{
+    transition: 0.3s;
+    background-color: #aecfeb;
+
+}
+
+nav .link{
+    width:100px ;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+
+
+}
+nav .link a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: #222;
+
+}
+
+nav .link:hover{
+    background-color: #222;
+    /* text-decoration: underline; */
+
+}
+nav .link:hover a{
+
+        color: #aecfeb;
+
+}
+
+
+@media (max-width:600px) {
+    nav .link{
+        display: none;
+    }
+} 
+
+
+
+
+/* product start */
+
+
+.products .container>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:10px ;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+h2{
+    text-align: center;
+    width: 100%;
+}
+.product-box{
+    
+    width: 300px;
+    height: 400px;
+    padding: 3px;
+    border: 1px solid #666;
+    box-shadow: 1px 5px 5px #111 ;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+
+}
+.product-box:hover{
+    background-color: #333;
+    color: #eee;
+    scale: 1.05;
+}
+
+.product-box .img-box{
+    /* background-color: #aecfeb; */
+    /* width: 280px; */
+    height: 60%;
+    margin: 2px;
+    overflow: hidden;
+}
+.product-box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-box .product-name{
+    /* background-color: bisque; */
+    height: 10%;
+    text-align: center;
+
+}
+
+.product-box .product-discription{
+    /* background-color: blue; */
+    height: 20%;
+    text-align: center;
+}
+
+.product-box .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+
+}
+
+
+.buy Button:hover{
+    transition: 0.3s;
+    background-color: #aecfeb;
+}
